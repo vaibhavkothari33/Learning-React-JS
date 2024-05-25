@@ -11,7 +11,7 @@ function App() {
       // console.log("value added: ", value);
     }
     else {
-      // value=21;
+      value=20;
       console.log("value can not be incresase");
     }
 
@@ -24,6 +24,7 @@ function App() {
       // console.log("value removed: ", value);
     }
     else{
+      value=0;
       console.log("Value cannot be decresed");
     }
   }
