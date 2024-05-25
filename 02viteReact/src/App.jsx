@@ -35,6 +35,7 @@ function App() {
       <h2>Counter value: {value}</h2>
       <button onClick={addValue}>Increment: {value}</button>
       <br /><br />
+      <a href="App1.jsx"><button>Click me </button></a>
       <button onClick={remValue}>Decrement: {value}</button>
       <br /><br />
       {/* <button onClick={addValue}>Increment x 2: {value*2}</button>
