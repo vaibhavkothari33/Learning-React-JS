@@ -27,7 +27,6 @@
             <li>let [value,method_of_the_same_value ]=useState(defaultvalue)</li>
             <li>Key features of fiber is the ablity to pause, abort or resuse work</li>
              </ul>
-
         <h2>Day-2</h2>
         <ul>
           <li>Made a simple counter project to learn about the states in React</li>
