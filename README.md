@@ -28,6 +28,15 @@
             <li>Key features of fiber is the ablity to pause, abort or resuse work</li>
              </ul>
 
+        <h2>Day-2</h2>
+        <ul>
+          <li>Made a simple counter project to learn about the states in React</li>
+          <li>also made a background changer using the same property</li>
+          <li>Learned about the proprs in React and how we can use the same components different places with different values</li>
+          <li>useCallback is a react hook that lets us cache function definition between re-renders</li>
+             </ul>
+        
+
       
 </body>
 </html>
