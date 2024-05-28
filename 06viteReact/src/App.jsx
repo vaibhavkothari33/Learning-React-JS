@@ -9,6 +9,7 @@ function App() {
   return (
     <>
     <div className="mx-auto text-white w-full h-screen m-0 p-0 text-6xl bg-red-600">Hello world this is </div>
+    <div className="mx-auto text-white w-full h-screen m-0 p-0 text-6xl bg-red-600">Hello world this is </div>
     </>
   )
 }
