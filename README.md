@@ -34,6 +34,11 @@
           <li>Learned about the proprs in React and how we can use the same components different places with different values</li>
           <li>useCallback is a react hook that lets us cache function definition between re-renders</li>
              </ul>
+        <h2>Day-3</h2>
+         <ul>
+          <li>Made a Password generator </li>
+          <li>using the useRef useCallback, useState, and useEffect</li>
+             </ul>
         
 
       
