@@ -23,9 +23,14 @@
             <li>How does the structure of react works</li>
             <li>Learned about the concepts of hooks in react</li>
             <li>Very usefull when we need to change the same variable in different parts in UI</li>
-            <li>import { useState } from 'react'</li>
-            <li>let [value,method_of_the_same_value ]=useState(defaultvalue)</li>
-            <li>Key features of fiber is the ablity to pause, abort or resuse work</li>
+
+ ```
+            import { useState } from 'react'
+ ```
+```
+            let [value,method_of_the_same_value ]=useState(defaultvalue)
+```
+<li>Key features of fiber is the ablity to pause, abort or resuse work</li>
              </ul>
         <h2>Day-2</h2>
         <ul>
@@ -39,7 +44,30 @@
           <li>Made a Password generator </li>
           <li>using the useRef useCallback, useState, and useEffect</li>
              </ul>
+        <h2>Day-4</h2>
+        <ul>
+        <li>Learned more about customs hooks and router in react</li>
+           
+  ``` function Github() {
+    const [data, setData] = useState([])
+    useEffect(() => {
+        fetch("https://api.github.com/users/vaibhavkothari33")
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setData[data]
+            })
+    }, [])
+```
+```
+export const githubInfoLoader = async()=>{
+    const responce = await fetch("https://api.github.com/users/vaibhavkothari33")
+    return responce.json()
+}
+```
+
         
+
 
       
 </body>
