@@ -1,33 +1,35 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [dark, setDark] = useState(false)
+
+  const toggleDarkMode = () => {
+    setDark(!dark);
+  };
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div className={`${dark && "dark"}`}>
+        <div className='dark:bg-blue-900'>
+
+        <h1 className='text-blue-800 text-bold text-5xl dark:text-yellow-400 rounded-xl'> Power of Tailwind Css</h1>
+
+        <div className='mt-20 text-black bg-blue-700 rounded-xl'>
+          <h2 className='p-5'>This is second tittle</h2>
+          <p className='text-left mx-5 pb-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, molestiae? Repellendus illo sequi optio eos. Ipsa tempore veniam inventore fuga. Non, dicta facere! Eius eligendi provident sequi iure atque blanditiis beatae. Hic corporis perferendis similique totam iusto optio corrupti ratione. Optio nobis a minima eum!</p>
+        </div>
+        <div className='mt-20 text-black bg-blue-700 rounded-xl'>
+          <h2 className='p-5'>This is Third tittle</h2>
+          <p className='text-left mx-5 pb-7 mb-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, molestiae? Repellendus illo sequi optio eos. Ipsa tempore veniam inventore fuga. Non, dicta facere! Eius eligendi provident sequi iure atque blanditiis beatae. Hic corporis perferendis similique totam iusto optio corrupti ratione. Optio nobis a minima eum!</p>
+        </div>
+
+        <button className='rounded-full bg-slate-900 w-10 h-10 mb-4  text-white absolute bottom-30 right-16' onClick={toggleDarkMode} >{dark ? "LGT" : "DRK"}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
