@@ -67,7 +67,25 @@ export const githubInfoLoader = async()=>{
 ```
 
         
+```
+import { useParams } from 'react-router-dom'
+```
 
+this is use to get user data from the url like after a particular route
+user/vaibhav
+```
+import React from 'react'
+import { useParams } from 'react-router-dom'
+
+function User() {
+    const {userid}=useParams()
+  return (
+    <div>User: {userid}</div>
+  )
+}
+
+export default User
+```
 
       
 </body>
