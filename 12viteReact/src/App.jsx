@@ -1,18 +1,14 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SearchPage from './components/BookCard'
-import BookshelfPage from './components/BookCard'
-import Header from './components/Header'
-import './App.css'
-import './index.css'
+import UserContextProvider from './context/UserContextProvider'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-   <>
-   
-   </>
+    <UserContextProvider>
+      <h1 className='text-center text-white'>Hello world</h1>
+    </UserContextProvider>
   )
 }
 
